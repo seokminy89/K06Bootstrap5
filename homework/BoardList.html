@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+<div class="container-fluid mt-3">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+       
+        <!-- 네비 링크 -->
+        <ul class="navbar-nav">
+        <!-- 로고
+            이미지를 원형으로 만들고 싶다면 rounded-pill 클래스를 추가한다. 
+        -->
+        <a class="navbar-brand" href="#"><img src="https://www.ikosmo.co.kr/images/common/logo_center_v2.jpg" width="120"></a>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">홈으로</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">회원제게시판</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">자료실</a>
+            </li>
+            <!-- 
+                드롭다운 메뉴 추가하기
+                -부모 엘리먼트에 dropdown 클래스 추가
+                -a태그에 dropdown-toggle 클래스 추가, data-bs-toggle="dropdown" 속성추가.
+                -하위에 드롭다운 메뉴로 사용할 ul태그 추가.
+             -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">임시Menu</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">휴대기기</a></li>
+                    <li><a class="dropdown-item" href="#">가전제품</a></li>
+                    <li><a class="dropdown-item" href="#">애견용품</a></li>
+                </ul>
+            </li>
+            
+    
+            <!-- 
+                검색 폼 추가 
+                ms-숫자 : m(margin)s(start:left)-숫자(1~5), 즉 좌측 마진을 설정한다.
+                me-숫자 : 위와 동일하고 우측 마진을 설정한다.
+            ※부트스트랩만으로 정확한 위치나 사이즈를 맞출 수 없을때는 별도의 style을 
+            사용해야 한다.
+            -->
+            <form class="d-flex">
+                <input class="form-control ms-3" type="text" placeholder="검색" style="height: 37px; margin-top: 5px;">
+                <button class="btn" type="button" style="background-color: white;"><i class="bi-alarm"></i></button>
+            </form>
+        </ul>
+        </div>
+    </nav>
+</div>
+</body>
+</html>
